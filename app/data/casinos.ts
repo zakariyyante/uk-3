@@ -25,7 +25,6 @@ const generateIdFromName = (name: string): number => {
     return acc + char.charCodeAt(0);
   }, 0);
 };
-
 // Badge options for top 3
 const topBadges = ["Best Bonus", "Top Pick", "Trending Now"];
 
