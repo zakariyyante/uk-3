@@ -8,9 +8,10 @@ import { track } from '@vercel/analytics';
 
 interface CasinoCardProps {
   casino: Casino;
+  badge?: 'gold' | 'silver' | 'bronze';
 }
 
-export default function CasinoCard({ casino }: CasinoCardProps) {
+export default function CasinoCard({ casino, badge }: CasinoCardProps) {
   // Track click on mobile casino brands
   const handleCasinoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (casino.isMobile) {
@@ -50,13 +51,39 @@ export default function CasinoCard({ casino }: CasinoCardProps) {
     return logos[casino.logo as keyof typeof logos];
   };
 
+  const getBadgeStyles = () => {
+    if (badge === 'gold') {
+      return 'bg-gradient-to-br from-yellow-400 to-yellow-600 text-black border-yellow-500';
+    }
+    if (badge === 'silver') {
+      return 'bg-gradient-to-br from-gray-300 to-gray-500 text-black border-gray-400';
+    }
+    if (badge === 'bronze') {
+      return 'bg-gradient-to-br from-amber-600 to-amber-800 text-white border-amber-700';
+    }
+    return '';
+  };
+
+  const getBadgeLabel = () => {
+    if (badge === 'gold') return "Editor's pick";
+    if (badge === 'silver') return 'Most Popular';
+    if (badge === 'bronze') return 'Fast Payout';
+    return '';
+  };
+
   return (
-    <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-lg p-3 sm:p-4 lg:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-purple-500/20 hover:border-purple-500/40">
+    <div className="relative bg-gradient-to-br from-slate-900 to-slate-800 rounded-lg p-3 sm:p-4 lg:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-purple-500/20 hover:border-purple-500/40">
       {/* Top Row: Logo Left, Rating Right */}
       <div className="flex items-center justify-between gap-3 sm:gap-4 mb-3 sm:mb-4">
         {/* Logo - Left */}
-        <div className="flex-shrink-0 w-32 sm:w-36 lg:w-48">
-          <div className="w-full aspect-[5/2]">
+        <div className="relative flex-shrink-0 w-28 sm:w-32 lg:w-40">
+          {/* Badge */}
+          {badge && (
+            <div className={`absolute -top-3 sm:-top-4 left-0 z-10 ${getBadgeStyles()} px-2 py-1 sm:px-3 sm:py-1.5 rounded-md border flex items-center justify-center font-bold text-[10px] sm:text-xs shadow-lg whitespace-nowrap`}>
+              {getBadgeLabel()}
+            </div>
+          )}
+          <div className={`w-full aspect-[5/2] ${badge ? 'mt-5 sm:mt-6' : ''}`}>
             {renderLogo()}
           </div>
         </div>
@@ -74,7 +101,7 @@ export default function CasinoCard({ casino }: CasinoCardProps) {
       <div className="flex items-center justify-between gap-3 sm:gap-4">
         {/* Bonus Text - Left */}
         <div className="flex-1 min-w-0">
-          <p className="text-yellow-400 font-semibold text-xs sm:text-sm lg:text-lg leading-snug">
+          <p className="text-yellow-400 font-semibold text-base sm:text-lg lg:text-2xl leading-snug">
             {casino.bonus}
           </p>
         </div>
