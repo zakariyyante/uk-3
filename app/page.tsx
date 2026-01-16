@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950">
       {/* Mobile Casino Modal - Shows when gclid is present */}
-      {/*<MobileCasinoModal mobileCasinos={mobileCasinos} />*/}
+      <MobileCasinoModal mobileCasinos={mobileCasinos} />
       
       {/* Exclusive Offer Popup - Shows after 5 seconds and when user scrolls */}
       {/*<ExclusiveOfferPopup casino={exclusiveCasino} />*/}
