@@ -79,7 +79,7 @@ export default function CasinoCard({ casino, badge }: CasinoCardProps) {
         <div className="relative flex-shrink-0 w-28 sm:w-32 lg:w-40">
           {/* Badge */}
           {badge && (
-            <div className={`absolute -top-3 sm:-top-4 left-0 z-10 ${getBadgeStyles()} px-2 py-1 sm:px-3 sm:py-1.5 rounded-md border flex items-center justify-center font-bold text-[10px] sm:text-xs shadow-lg whitespace-nowrap`}>
+            <div className={`absolute -top-3 sm:-top-4 left-0 z-[1] ${getBadgeStyles()} px-2 py-1 sm:px-3 sm:py-1.5 rounded-md border flex items-center justify-center font-bold text-[10px] sm:text-xs shadow-lg whitespace-nowrap`}>
               {getBadgeLabel()}
             </div>
           )}

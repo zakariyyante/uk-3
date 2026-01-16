@@ -39,7 +39,7 @@ export default function MobileCasinoModal({ mobileCasinos }: MobileCasinoModalPr
     <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm overflow-y-auto">
       <div className="w-full min-h-screen bg-gradient-to-br from-slate-900 to-slate-800">
         {/* Hero Section */}
-        <div className="sticky top-0 z-10 bg-gradient-to-r from-purple-900/95 to-slate-900/95 backdrop-blur-sm border-b border-purple-500/30 px-4 sm:px-6 py-6 sm:py-8">
+        <div className="sticky top-0 z-20 bg-gradient-to-r from-purple-900/95 to-slate-900/95 backdrop-blur-sm border-b border-purple-500/30 px-4 sm:px-6 py-6 sm:py-8">
           <div className="container mx-auto text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-yellow-400 mb-3 sm:mb-4">
               🎰 New Casino Sites with Fast Withdrawal 2026
