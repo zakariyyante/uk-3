@@ -19,7 +19,7 @@ export default function Home() {
       <MobileCasinoModal mobileCasinos={mobileCasinos} />
       
       {/* Exclusive Offer Popup - Shows after 5 seconds and when user scrolls */}
-      {/*<ExclusiveOfferPopup casino={exclusiveCasino} />*/}
+      <ExclusiveOfferPopup casino={exclusiveCasino} />
       
       {/* Header */}
       <Header />
