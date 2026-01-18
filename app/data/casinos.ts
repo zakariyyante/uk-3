@@ -37,48 +37,48 @@ const casinosRawData: CasinoRawData[] = [
   //   url: "https://any-site1.com/YTpqyz6h",
   //   isMobile: true
   // },
-  {
-    name: "Agent No Wager",
-    logo: "/agentnowager.svg",
-    bonus: "Up to 90 FS + 45% Without Wager!",
-    url: "https://any-site1.com/ht2pbwVK",
-    isMobile: true
-  },
-  {
-    name: "Lizaro",
-    logo: "/lizaro.png",
-    bonus: "350% up to £680 + 200 FS",
-    url: "https://any-site1.com/hhbHzRbC",
-    isMobile: true
-  },
-  {
-    name: "SlotsCharm",
-    logo: "/slotscharm.svg",
-    bonus: "375% + 300 FS",
-    url: "https://any-site1.com/PQYz23Yc",
-    isMobile: true
-  },
-  {
-    name: "VegasHero",
-    logo: "/VegasHero.png",
-    bonus: "300% up to €500 + 300 FS",
-    url: "https://any-site1.com/sF24tnhr",
-    isMobile: true
-  },
-  {
-    name: "Lucky Mister",
-    logo: "/luckymister.svg",
-    bonus: "500% + 500 FS",
-    url: "https://any-site1.com/czmt7rX8",
-    isMobile: true
-  },
-  {
-    name: "Golden Mister",
-    logo: "/goldenmister.svg",
-    bonus: "925% to your first deposits!",
-    url: "https://any-site1.com/3pJCKVKr",
-    isMobile: true
-  },
+  // {
+  //   name: "Agent No Wager",
+  //   logo: "/agentnowager.svg",
+  //   bonus: "Up to 90 FS + 45% Without Wager!",
+  //   url: "https://any-site1.com/ht2pbwVK",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "Lizaro",
+  //   logo: "/lizaro.png",
+  //   bonus: "350% up to £680 + 200 FS",
+  //   url: "https://any-site1.com/hhbHzRbC",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "SlotsCharm",
+  //   logo: "/slotscharm.svg",
+  //   bonus: "375% + 300 FS",
+  //   url: "https://any-site1.com/PQYz23Yc",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "VegasHero",
+  //   logo: "/VegasHero.png",
+  //   bonus: "300% up to €500 + 300 FS",
+  //   url: "https://any-site1.com/sF24tnhr",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "Lucky Mister",
+  //   logo: "/luckymister.svg",
+  //   bonus: "500% + 500 FS",
+  //   url: "https://any-site1.com/czmt7rX8",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "Golden Mister",
+  //   logo: "/goldenmister.svg",
+  //   bonus: "925% to your first deposits!",
+  //   url: "https://any-site1.com/3pJCKVKr",
+  //   isMobile: true
+  // },
 
   // {
   //   name: "GoldenGenie",
@@ -94,7 +94,22 @@ const casinosRawData: CasinoRawData[] = [
   //   url: "https://any-site1.com/bKKnfqLP",
   //   isMobile: true
   // },
+  {
+    name: "Voodoo Dreams",
+    logo: "voodooDreams",
+    bonus: "100% Bonus up to £50 + 50 Real Money Free Spins",
+    url: "https://www.voodoocasino.com",
+    isMobile: true
 
+  },
+  {
+    name: "Pub Casino",
+    logo: "pubCasino",
+    bonus: "Welcome Bonus Get 100% Up To £100",
+    url: "https://www.pubcasino.com",
+    isMobile: true
+
+  },
   {
     name: "Voodoo Dreams",
     logo: "voodooDreams",

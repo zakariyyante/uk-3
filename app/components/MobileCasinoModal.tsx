@@ -45,7 +45,7 @@ export default function MobileCasinoModal({ mobileCasinos }: MobileCasinoModalPr
               🎰 New Casino Sites with Fast Withdrawal 2026
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-300">
-              Play the best slots games at new casinos with instant fast withdrawal and top bonuses
+              Check the best slots games at new casinos with instant fast withdrawal and top bonuses
             </p>
           </div>
         </div>

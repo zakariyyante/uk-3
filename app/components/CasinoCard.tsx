@@ -115,7 +115,7 @@ export default function CasinoCard({ casino, badge }: CasinoCardProps) {
         onClick={handleCasinoClick}
         className="block w-full bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold py-4 px-6 rounded-2xl text-center text-base sm:text-lg uppercase shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
       >
-        Play Now
+        Check Now
         <ArrowRight className="w-5 h-5" />
       </a>
     </div>
