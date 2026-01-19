@@ -30,6 +30,7 @@ const topBadges = ["Best Bonus", "Top Pick", "Trending Now"];
 
 // Raw casino data without id, rating, and badge
 const casinosRawData: CasinoRawData[] = [
+  //
   // {
   //   name: "HotLoot",
   //   logo: "/hotloot.svg",
