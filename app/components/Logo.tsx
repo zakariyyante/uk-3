@@ -18,17 +18,17 @@ export default function Logo({ className = "" }: LogoProps) {
           />
           
           {/* Number 5 */}
-          <text 
-            x="20" 
-            y="26" 
-            fontFamily="Arial Black, sans-serif" 
-            fontSize="16" 
-            fontWeight="900"
-            fill="#ffffff" 
-            textAnchor="middle"
-          >
-            5
-          </text>
+          {/*<text */}
+          {/*  x="20" */}
+          {/*  y="26" */}
+          {/*  fontFamily="Arial Black, sans-serif" */}
+          {/*  fontSize="16" */}
+          {/*  fontWeight="900"*/}
+          {/*  fill="#ffffff" */}
+          {/*  textAnchor="middle"*/}
+          {/*>*/}
+          {/*  5*/}
+          {/*</text>*/}
         </svg>
       </div>
     </div>

@@ -95,20 +95,7 @@ const casinosRawData: CasinoRawData[] = [
   //   url: "https://any-site1.com/bKKnfqLP",
   //   isMobile: true
   // },
-  {
-    name: "Voodoo Dreams",
-    logo: "voodooDreams",
-    bonus: "100% Bonus up to £50 + 50 Real Money Free Spins",
-    url: "https://www.voodoocasino.com",
-    isMobile: true
-  },
-  {
-    name: "Pub Casino",
-    logo: "pubCasino",
-    bonus: "Welcome Bonus Get 100% Up To £100",
-    url: "https://www.pubcasino.com",
-    isMobile: true
-  },
+
   {
     name: "Voodoo Dreams",
     logo: "voodooDreams",
