@@ -52,19 +52,20 @@ const casinosRawData: CasinoRawData[] = [
     isMobile: true
   },
   {
-    name: "AmonBet",
-    logo: "/amonbet.svg",
-    bonus: "100% up to 1,000£ + 100 FREE SPINS",
-    url: "https://any-site1.com/zx4j59vs",
-    isMobile: true
-  },
-  {
     name: "LuckyWave",
     logo: "/luckywave.svg",
     bonus: "100% UP TO 2,000 €/£ + 200 FREE SPINS",
     url: "https://any-site1.com/m5Cn7JWD",
     isMobile: true
   },
+  // {
+  //   name: "AmonBet",
+  //   logo: "/amonbet.svg",
+  //   bonus: "100% up to 1,000£ + 100 FREE SPINS",
+  //   url: "https://any-site1.com/zx4j59vs",
+  //   isMobile: true
+  // },
+
 
 
 
