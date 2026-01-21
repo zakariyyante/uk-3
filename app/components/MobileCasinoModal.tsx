@@ -44,17 +44,20 @@ export default function MobileCasinoModal({ mobileCasinos }: MobileCasinoModalPr
         {/* Header - Menu bar at top */}
         <Header />
 
+
+
         {/* Hero Section */}
-        <div className="bg-gradient-to-r from-purple-900/95 to-slate-900/95 border-b border-purple-500/30 px-4 sm:px-6 py-6 sm:py-8">
+        <div className="bg-gradient-to-r from-purple-900/95 to-slate-900/95 border-b border-purple-500/30 px-4 sm:px-6 py-3 sm:py-4">
           <div className="container mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-yellow-400 mb-3 sm:mb-4">
+            <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold text-yellow-400 mb-2">
               🎰 New Casino Sites with Fast Withdrawal 2026
             </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-gray-300">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-300">
               Check the best casinos in UK
             </p>
           </div>
         </div>
+
 
         {/* Content */}
         <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">

@@ -31,12 +31,42 @@ const topBadges = ["Best Bonus", "Top Pick", "Trending Now"];
 // Raw casino data without id, rating, and badge
 const casinosRawData: CasinoRawData[] = [
   // {
+  //   name: "RollySpin",
+  //   logo: "/RollySpin.svg",
+  //   bonus: "200% up to 1,000£ + 50 FREE SPINS",
+  //   url: "https://any-site1.com/znYjBPcw",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "SlotLair",
+  //   logo: "/slotlair.svg",
+  //   bonus: "100% up to €/£ 3,000 + 100 FREE SPINS",
+  //   url: "https://any-site1.com/qqr6XvNP",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "AmonBet",
+  //   logo: "/amonbet.svg",
+  //   bonus: "100% up to 1,000£ + 100 FREE SPINS",
+  //   url: "https://any-site1.com/zx4j59vs",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "LuckyWave",
+  //   logo: "/luckywave.svg",
+  //   bonus: "100% UP TO 2,000 €/£ + 200 FREE SPINS",
+  //   url: "https://any-site1.com/m5Cn7JWD",
+  //   isMobile: true
+  // },
+  // {
   //   name: "Lizaro",
   //   logo: "/lizaro.png",
-  //   bonus: "350% up to £680 + 200 FS",
+  //   bonus: "350% up to £680 + 200 FREE SPINS",
   //   url: "https://any-site1.com/hhbHzRbC",
   //   isMobile: true
   // },
+
+
   // {
   //   name: "VegasHero",
   //   logo: "/VegasHero.png",
@@ -134,7 +164,7 @@ const casinosRawData: CasinoRawData[] = [
 
 // Generate casinos with auto-calculated id, rating, and badge
 export const casinos: Casino[] = casinosRawData.map((casino, index) => {
-  const rating = parseFloat((9.9 - index * 0.1).toFixed(1));
+  const rating = parseFloat((10 - index * 0.1).toFixed(1));
   
   return {
     id: generateIdFromName(casino.name) + index, // Include index to ensure uniqueness

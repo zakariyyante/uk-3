@@ -13,11 +13,21 @@ interface CasinoCardProps {
 
 export default function CasinoCard({ casino, badge }: CasinoCardProps) {
   // Track click on mobile casino brands
-  const handleCasinoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleCasinoClick = () => {
     if (casino.isMobile) {
       track('Casino Click', {
         casino: casino.name
       });
+    }
+  };
+  const handleCardClick = () => {
+    handleCasinoClick();
+    window.open(casino.url, '_blank', 'noopener,noreferrer');
+  };
+  const handleCardKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleCardClick();
     }
   };
 
@@ -56,17 +66,23 @@ export default function CasinoCard({ casino, badge }: CasinoCardProps) {
   const paymentMethods = ['PayPal', 'Visa Debit', 'Mastercard Debit', 'Skrill', 'Neteller'];
 
   return (
-    <div className="relative bg-[#31274F] rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+    <div
+      className="relative bg-[#31274F] rounded-3xl p-7 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer"
+      role="link"
+      tabIndex={0}
+      onClick={handleCardClick}
+      onKeyDown={handleCardKeyDown}
+    >
       {/* Badge - Top Left */}
       {badge && (
-        <div className={`absolute -top-2 -left-2 z-10 font-bold text-xs px-4 py-1.5 rounded-lg uppercase shadow-lg whitespace-nowrap border-2 ${
+        <div className={`absolute left-0 top-0 rounded-full px-3 py-1 text-[11px] font-extrabold tracking-wide ring-1 ${
           badge === 'gold' 
             ? 'bg-orange-500 border-orange-300 text-white' 
             : badge === 'silver' 
             ? 'bg-purple-500 border-purple-300 text-white' 
             : 'bg-yellow-400 border-yellow-300 text-black'
         }`}>
-          {badge === 'gold' ? "Editor's pick" : badge === 'silver' ? 'Most Popular' : 'Fast Payout'}
+          {badge === 'gold' ? "Fast Withdrawal" : badge === 'silver' ? 'Most Popular' : 'No Wagering'}
         </div>
       )}
 
@@ -95,16 +111,18 @@ export default function CasinoCard({ casino, badge }: CasinoCardProps) {
         </p>
       </div>
 
-      {/* Payment Methods - Centered Row */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-6">
-        {paymentMethods.map((method) => (
-          <span
-            key={method}
-            className="px-3 py-1 bg-gray-900/50 border border-gray-700 rounded-full text-white text-xs"
-          >
-            {method}
-          </span>
-        ))}
+      {/* Payment Methods - Scrollable Row */}
+      <div className="mt-3 flex justify-center mb-6">
+        <div className="flex max-w-full gap-2 overflow-x-auto no-scrollbar px-1 py-1">
+          {paymentMethods.map((method) => (
+            <span
+              key={method}
+              className="whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-semibold text-white/80"
+            >
+              {method}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* CTA Button - Full Width Bottom */}
@@ -112,7 +130,10 @@ export default function CasinoCard({ casino, badge }: CasinoCardProps) {
         href={casino.url}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={handleCasinoClick}
+        onClick={(event) => {
+          event.stopPropagation();
+          handleCasinoClick();
+        }}
         className="block w-full bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold py-4 px-6 rounded-2xl text-center text-base sm:text-lg uppercase shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
       >
         Check Now
