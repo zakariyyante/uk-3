@@ -38,19 +38,20 @@ const casinosRawData: CasinoRawData[] = [
     isMobile: true
   },
   {
-    name: "SlotsCharm",
-    logo: "/slotscharm.svg",
-    bonus: "375% up to £3000 + 300 FREE SPINS",
-    url: "https://any-site1.com/PQYz23Yc",
-    isMobile: true
-  },
-  {
     name: "Agent No Wager",
     logo: "/agentnowager.svg",
     bonus: "Up to 90 FREE SPINS + 45% Without Wager!",
     url: "https://any-site1.com/ht2pbwVK",
     isMobile: true
   },
+  {
+    name: "SlotsCharm",
+    logo: "/slotscharm.svg",
+    bonus: "375% up to £3000 + 300 FREE SPINS",
+    url: "https://any-site1.com/PQYz23Yc",
+    isMobile: true
+  },
+
   {
     name: "LegionBet",
     logo: "/legionbet.svg",
