@@ -51,21 +51,28 @@ const casinosRawData: CasinoRawData[] = [
     url: "https://any-site1.com/PQYz23Yc",
     isMobile: true
   },
+  {
+    name: "HotLoot",
+    logo: "/hotloot.svg",
+    bonus: "250% UP TO €2.500 + 100 FREE SPINS",
+    url: "https://any-site1.com/YTpqyz6h",
+    isMobile: true
+  },
 
-  {
-    name: "LegionBet",
-    logo: "/legionbet.svg",
-    bonus: "250% up to £13000 + 300 FREE SPINS",
-    url: "https://any-site1.com/K7w9ctrg",
-    isMobile: true
-  },
-  {
-    name: "VegasHero",
-    logo: "/VegasHero.png",
-    bonus: "300% up to €500 + 300 FREE SPINS",
-    url: "https://any-site1.com/sF24tnhr",
-    isMobile: true
-  },
+  // {
+  //   name: "LegionBet",
+  //   logo: "/legionbet.svg",
+  //   bonus: "250% up to £13000 + 300 FREE SPINS",
+  //   url: "https://any-site1.com/K7w9ctrg",
+  //   isMobile: true
+  // },
+  // {
+  //   name: "VegasHero",
+  //   logo: "/VegasHero.png",
+  //   bonus: "300% up to €500 + 300 FREE SPINS",
+  //   url: "https://any-site1.com/sF24tnhr",
+  //   isMobile: true
+  // },
   // {
   //   name: "LuckyWave",
   //   logo: "/luckywave.svg",
@@ -126,12 +133,7 @@ const casinosRawData: CasinoRawData[] = [
   // },
   //
   // {
-  //   name: "HotLoot",
-  //   logo: "/hotloot.svg",
-  //   bonus: "250% UP TO €2.500 + 100 FS",
-  //   url: "https://any-site1.com/YTpqyz6h",
-  //   isMobile: true
-  // },
+
 
 
 
