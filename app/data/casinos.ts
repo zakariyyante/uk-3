@@ -30,27 +30,41 @@ const topBadges = ["Best Bonus", "Top Pick", "Trending Now"];
 ///
 // Raw casino data without id, rating, and badge
 const casinosRawData: CasinoRawData[] = [
-  // {
-  //   name: "Lizaro",
-  //   logo: "/lizaro.png",
-  //   bonus: "350% up to £680 + 200 FREE SPINS",
-  //   url: "https://any-site1.com/hhbHzRbC",
-  //   isMobile: true
-  // },
-  // {
-  //   name: "Agent No Wager",
-  //   logo: "/agentnowager.svg",
-  //   bonus: "Up to 90 FREE SPINS + 45% Without Wager!",
-  //   url: "https://any-site1.com/ht2pbwVK",
-  //   isMobile: true
-  // },
-  // {
-  //   name: "SlotsCharm",
-  //   logo: "/slotscharm.svg",
-  //   bonus: "375% up to £3000 + 300 FREE SPINS",
-  //   url: "https://any-site1.com/PQYz23Yc",
-  //   isMobile: true
-  // },
+  {
+    name: "Lizaro",
+    logo: "/lizaro.png",
+    bonus: "350% up to £680 + 200 FREE SPINS",
+    url: "https://any-site1.com/hhbHzRbC",
+    isMobile: true
+  },
+  {
+    name: "RollySpin",
+    logo: "/RollySpin.svg",
+    bonus: "200% up to 1,000£ + 50 FREE SPINS",
+    url: "https://any-site1.com/znYjBPcw",
+    isMobile: true
+  },
+  {
+    name: "CasinoPrestige",
+    logo: "/prestige.svg",
+    bonus: "100% Bonus up to £750 + 100 Free Spins + 3 Wheel of Luck Spins",
+    url: "https://any-site1.com/yZ4VnswQ",
+    isMobile:true
+  },
+  {
+    name: "Agent No Wager",
+    logo: "/agentnowager.svg",
+    bonus: "Up to 90 FREE SPINS + 45% Without Wager!",
+    url: "https://any-site1.com/ht2pbwVK",
+    isMobile: true
+  },
+  {
+    name: "SlotsCharm",
+    logo: "/slotscharm.svg",
+    bonus: "375% up to £3000 + 300 FREE SPINS",
+    url: "https://any-site1.com/PQYz23Yc",
+    isMobile: true
+  },
   // {
   //   name: "HotLoot",
   //   logo: "/hotloot.svg",
@@ -82,13 +96,6 @@ const casinosRawData: CasinoRawData[] = [
   // },
 
 
-  // {
-  //   name: "RollySpin",
-  //   logo: "/RollySpin.svg",
-  //   bonus: "200% up to 1,000£ + 50 FREE SPINS",
-  //   url: "https://any-site1.com/znYjBPcw",
-  //   isMobile: true
-  // },
   // {
   //   name: "SlotLair",
   //   logo: "/slotlair.svg",
