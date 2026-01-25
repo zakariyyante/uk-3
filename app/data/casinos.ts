@@ -52,12 +52,19 @@ const casinosRawData: CasinoRawData[] = [
     isMobile:true
   },
   {
-    name: "DaffSpin",
-    logo: "/daffspin.png",
-    bonus: "HIGHROLLER BONUS +50% Up to 500£",
-    url: "https://any-site1.com/zGmF9Yvq",
+    name: "LuckyWave",
+    logo: "/luckywave.svg",
+    bonus: "100% UP TO 2,000 €/£ + 200 FREE SPINS",
+    url: "https://any-site1.com/m5Cn7JWD",
     isMobile: true
   },
+  // {
+  //   name: "DaffSpin",
+  //   logo: "/daffspin.png",
+  //   bonus: "HIGHROLLER BONUS +50% Up to 500£",
+  //   url: "https://any-site1.com/zGmF9Yvq",
+  //   isMobile: true
+  // },
   // {
   //   name: "Agent No Wager",
   //   logo: "/agentnowager.svg",
@@ -94,13 +101,7 @@ const casinosRawData: CasinoRawData[] = [
   //   url: "https://any-site1.com/sF24tnhr",
   //   isMobile: true
   // },
-  // {
-  //   name: "LuckyWave",
-  //   logo: "/luckywave.svg",
-  //   bonus: "100% UP TO 2,000 €/£ + 200 FREE SPINS",
-  //   url: "https://any-site1.com/m5Cn7JWD",
-  //   isMobile: true
-  // },
+
 
 
   // {
