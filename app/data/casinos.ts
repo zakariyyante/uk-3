@@ -38,13 +38,6 @@ const casinosRawData: CasinoRawData[] = [
     isMobile:true
   },
   {
-    name: "HarryCasino",
-    logo: "/harry.svg",
-    bonus: "£1000 BONUS + 100 Free Spins",
-    url: "https://any-site1.com/mSFVwGrp",
-    isMobile:true
-  },
-  {
     name: "RollySpin",
     logo: "/RollySpin.svg",
     bonus: "200% up to 1,000£ + 50 FREE SPINS",
@@ -57,6 +50,13 @@ const casinosRawData: CasinoRawData[] = [
     bonus: "350% up to £680 + 200 FREE SPINS",
     url: "https://any-site1.com/hhbHzRbC",
     isMobile: true
+  },
+  {
+    name: "HarryCasino",
+    logo: "/harry.svg",
+    bonus: "£1000 BONUS + 100 Free Spins",
+    url: "https://any-site1.com/mSFVwGrp",
+    isMobile:true
   },
 
   // {
