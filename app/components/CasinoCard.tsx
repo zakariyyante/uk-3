@@ -77,7 +77,7 @@ export default function CasinoCard({ casino, badge, gclid }: CasinoCardProps) {
       {/* Badge - On top of card */}
       {badge && (
         <span
-          className={`absolute -top-3 left-4 rounded-full px-3 py-1.5 text-[11px] font-extrabold tracking-wide ring-1 ${
+          className={`absolute -top-3 left-1 rounded-full px-3 py-1.5 text-[11px] font-extrabold tracking-wide ring-1 ${
             badge === 'gold' 
               ? 'bg-emerald-500 text-white ring-emerald-400' 
               : badge === 'silver' 
@@ -92,7 +92,7 @@ export default function CasinoCard({ casino, badge, gclid }: CasinoCardProps) {
       {/* Top Section: Logo and Rating */}
       <div className="flex items-start justify-between mb-3">
         {/* Logo - Left */}
-        <div className="w-32 h-14 sm:w-36 sm:h-16 flex items-center justify-center [&>svg]:text-white [&>svg]:fill-white">
+        <div className="w-32 h-14 sm:w-36 sm:h-16 mt-2 flex items-center justify-center [&>svg]:text-white [&>svg]:fill-white">
           {renderLogo()}
         </div>
 
