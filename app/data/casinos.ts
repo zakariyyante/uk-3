@@ -240,6 +240,18 @@ const casinosRawData: CasinoRawData[] = [
     bonus: "100% Bonus up to £200 + 20 Free Spins",
     url: "https://www.karamba.co.uk/lp/wo-300-spins?asys=cexp&affid=40838&AffiliateID=cx-40838_717172&cxd=cx-40838_717172&afi=28080&ar=&gclid=&lpr=%5Bafp2%5D&mmi=%5Bafp5%5D&MSCLKID=%5BMSCLKID%5D&utm_content=40838"
   },
+  {
+    name: "247Bet",
+    logo: "/247.png",
+    bonus: "100% WELCOME BONUS UP TO £300 + 50 BONUS SPINS ON FIRST DEPOSIT",
+    url: "https://media1.casimbaaff.com/redirect.aspx?pid=52782&lpid=285&bid=1713&subid=247Bet-ST&clickid=",
+  },
+  {
+    name: "Spinland",
+    logo: "/spinland.png",
+    bonus: "100% WELCOME BONUS UP TO £300 + 50 BONUS SPINS ON FIRST DEPOSIT",
+    url: "https://media1.casimbaaff.com/redirect.aspx?pid=48778&lpid=213&bid=1617&subid=Spinland-ST&clickid=",
+  },
   // {
   //   name: "Coral Casino",
   //   logo: "coral",
