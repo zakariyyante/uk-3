@@ -38,19 +38,20 @@ const casinosRawData: CasinoRawData[] = [
     isMobile: true
   },
   {
-    name: "Qbet",
-    logo: "/qbet.svg",
-    bonus: "100% UP TO £100 BONUS + 200 FREE SPINS",
-    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=qbet",
-    isMobile: true
-  },
-  {
     name: "LuckyWave",
     logo: "/luckywave.svg",
     bonus: "100% UP TO £2,000  + 200 FREE SPINS",
     url: "https://topbritcasinos.com/B7W2b6jr?utm_target=luckywave",
     isMobile: true
   },
+  {
+    name: "Qbet",
+    logo: "/qbet.svg",
+    bonus: "100% UP TO £100 BONUS + 200 FREE SPINS",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=qbet",
+    isMobile: true
+  },
+
   {
     name: "Lizaro",
     logo: "/lizaro.png",
