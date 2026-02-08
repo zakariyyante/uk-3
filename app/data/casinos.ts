@@ -32,6 +32,13 @@ const topBadges = ["Best Bonus", "Top Pick", "Trending Now"];
 
 const casinosRawData: CasinoRawData[] = [
   {
+    name: "BetNinja",
+    logo: "/BetNinja.png",
+    bonus: "£1000 + 100 Free Spins",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=betninja",
+    isMobile: true
+  },
+  {
     name: "SpinShark",
     logo: "/spinshark.svg",
     bonus: "£900 BONUS + 150 Free Spins",
