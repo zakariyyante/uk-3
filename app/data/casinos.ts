@@ -50,7 +50,6 @@ const casinosRawData: CasinoRawData[] = [
     votes: 4915,
     isMobile: true
   },
-
   {
     name: "SpinShark",
     logo: "/spinshark.svg",
@@ -59,14 +58,13 @@ const casinosRawData: CasinoRawData[] = [
     votes: 4143,
     isMobile: true
   },
-
   {
-    name: "HarryCasino",
-    logo: "/harry.svg",
-    bonus: "£1000 BONUS + 100 Free Spins",
-    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=harry",
-    votes: 3951,
-    isMobile:true
+    name: "GQbet",
+    logo: "/gqbet.gif",
+    bonus: "Enjoy a Welcome Bonus £500 + 100 FREE SPINS",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=gqbet",
+    votes: 1997,
+    isMobile: true
   },
   {
     name: "Qbet",
@@ -76,6 +74,14 @@ const casinosRawData: CasinoRawData[] = [
     votes: 3986,
     isMobile: true
   },
+  // {
+  //   name: "HarryCasino",
+  //   logo: "/harry.svg",
+  //   bonus: "£1000 BONUS + 100 Free Spins",
+  //   url: "https://topbritcasinos.com/B7W2b6jr?utm_target=harry",
+  //   votes: 3951,
+  //   isMobile:true
+  // },
 
   // {
   //   name: "LuckyTwice",
@@ -97,14 +103,6 @@ const casinosRawData: CasinoRawData[] = [
   //   logo: "/VegasHero.png",
   //   bonus: "300% up to €500 + 300 FREE SPINS",
   //   url: "https://topbritcasinos.com/B7W2b6jr?utm_target=vegas",
-  //   isMobile: true
-  // },
-  // {
-  //   name: "GQbet",
-  //   logo: "/gqbet.gif",
-  //   bonus: "Enjoy a Welcome Bonus £500 + 100 FREE SPINS",
-  //   url: "https://topbritcasinos.com/B7W2b6jr?utm_target=gqbet",
-  //   votes: 1997,
   //   isMobile: true
   // },
   // {
