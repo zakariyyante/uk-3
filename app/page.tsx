@@ -128,7 +128,12 @@ export default async function Home({ searchParams }: PageProps) {
         {/* Casino Card */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
           {regularCasinos.map((casino, index) => (
-            <CasinoCard key={casino.id} casino={casino} rank={index + 1} />
+            <CasinoCard
+              key={casino.id}
+              casino={casino}
+              rank={index + 1}
+              badge={index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : undefined}
+            />
           ))}
         </div>
 
