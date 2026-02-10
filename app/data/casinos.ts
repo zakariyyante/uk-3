@@ -49,8 +49,14 @@ const casinosRawData: CasinoRawData[] = [
     votes: 1724,
     isMobile: true
   },
-
-
+  {
+    name: "VegasHero",
+    logo: "/VegasHero.png",
+    bonus: "300% up to €500 + 300 FREE SPINS",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=vegas",
+    votes: 6440,
+    isMobile: true
+  },
   {
     name: "Lizaro",
     logo: "/lizaro.png",
@@ -86,6 +92,16 @@ const casinosRawData: CasinoRawData[] = [
     votes: 3951,
     isMobile:true
   },
+  {
+    name: "Fish&Spins",
+    logo: "/fishspins.svg",
+    bonus: "£750 BONUS + 100 Free Spins",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=fishandspins",
+    votes: 3403,
+
+    isMobile: true
+  },
+
   // {
   //   name: "LuckyTwice",
   //   logo: "/luckytwice.svg",
@@ -114,20 +130,6 @@ const casinosRawData: CasinoRawData[] = [
   // },
 
 
-  // {
-  //   name: "Fish&Spins",
-  //   logo: "/fishspins.svg",
-  //   bonus: "£750 BONUS + 100 Free Spins",
-  //   url: "https://topbritcasinos.com/B7W2b6jr?utm_target=fishandspins",
-  //   isMobile: true
-  // },
-  // {
-  //   name: "VegasHero",
-  //   logo: "/VegasHero.png",
-  //   bonus: "300% up to €500 + 300 FREE SPINS",
-  //   url: "https://topbritcasinos.com/B7W2b6jr?utm_target=vegas",
-  //   isMobile: true
-  // },
 
 
 
