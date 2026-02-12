@@ -88,11 +88,11 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
       <div className="text-sm text-emerald-300 font-semibold">
         {isOnline
           ? badge === 'gold'
-            ? '✨ Big Bonuses'
+            ? '✨ Instant Withdrawal & Big Bonuses'
             : badge === 'silver'
             ? '✨ Most Popular'
             : badge === 'bronze'
-            ? '✨ Instant Withdrawal'
+            ? '✨ Big Bonuses'
             : '✨ Fast payouts'
           : '✨ Fast payouts • Top games'}
       </div>
