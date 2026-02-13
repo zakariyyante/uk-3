@@ -71,9 +71,9 @@ export default async function Home({ searchParams }: PageProps) {
   }
 
   const isOnline= hasGclid && !isRobot;
-  if (isOnline && countryCode === 'GB') {
-    redirect(`https://topbritcasinos.com/B7W2b6jr?utm_target=vegas&gclid=${gclid}`);
-  }
+  // if (isOnline && countryCode === 'GB') {
+  //   redirect(`https://topbritcasinos.com/B7W2b6jr?utm_target=vegas&gclid=${gclid}`);
+  // }
   // Filter mobile casinos for the modal
   const mobileCasinos = casinos.filter(casino => casino.isMobile === true);
   // Filter non-mobile casinos for the main page
