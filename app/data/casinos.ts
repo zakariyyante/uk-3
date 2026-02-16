@@ -33,11 +33,11 @@ const topBadges = ["Best Bonus", "Top Pick", "Trending Now"];
 // Raw casino data without id, rating, and badgess
 const casinosRawData: CasinoRawData[] = [
   {
-    name: "SpinFin",
-    logo: "/spinfin.svg",
-    bonus: "100% up to €600 + 200 FREE SPINS",
-    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=spinfin",
-    votes: 4915,
+    name: "Qbet",
+    logo: "/qbet.svg",
+    bonus: "100% UP TO £100 BONUS + 200 FREE SPINS",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=qbet",
+    votes: 3986,
     isMobile: true
   },
   {
@@ -48,13 +48,12 @@ const casinosRawData: CasinoRawData[] = [
     votes: 4915,
     isMobile: true
   },
-
   {
-    name: "Qbet",
-    logo: "/qbet.svg",
-    bonus: "100% UP TO £100 BONUS + 200 FREE SPINS",
-    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=qbet",
-    votes: 3986,
+    name: "SpinFin",
+    logo: "/spinfin.svg",
+    bonus: "100% up to €600 + 200 FREE SPINS",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=spinfin",
+    votes: 4915,
     isMobile: true
   },
   {
