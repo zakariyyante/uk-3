@@ -66,6 +66,19 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
       onClick={handleCardClick}
       onKeyDown={handleCardKeyDown}
     >
+      {/* {isOnline && (
+        <div className="mb-3 flex flex-wrap items-center gap-2">
+          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/90">
+            ✓ 100% Legal
+          </span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/90">
+            🇬🇧 UK Regulated
+          </span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/90">
+            ⚡ Fast Withdrawals
+          </span>
+        </div>
+      )} */}
       {isOnline && badge && (
         <span className={`absolute top-0 left-0 rounded-br-lg rounded-tl-2xl px-3 py-1.5 text-[11px] font-extrabold ${badgeClass}`}>
           {badge === 'gold' ? "Big Bonuses & Instant Withdrawal" : badge === 'silver' ? 'Most Popular & Fast Payout' : badge === 'bronze' ? 'Fast Payouts' :  'Trusted/Licensed'}
@@ -148,8 +161,8 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
       >
         {isOnline ? 'Get Bonus' : 'Play Now'}
         {/* Play Now */}
-        <ArrowRight className="w-4 h-4" />
-        {isOnline ? <span aria-hidden="true" className="text-xl">💰</span> : ''}
+        {/* <ArrowRight className="w-4 h-4" /> */}
+        {/* {isOnline ? <span aria-hidden="true" className="text-xl">💰</span> : ''} */}
       </a>
       <div className="mt-2 text-center text-[11px] text-white/60">
         T&amp;Cs apply.

@@ -47,11 +47,24 @@ export default function MobileCasinoModal({ mobileCasinos, isOnline, gclidValue 
             </h2>
           </div>
         </div>
+         {/* {isOnline && (
+        <div className="mb-3 flex flex-wrap items-center gap-2">
+          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/90">
+            ✓ 100% Legal
+          </span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/90">
+            🇬🇧 UK Regulated
+          </span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white/90">
+            ⚡ Fast Withdrawals
+          </span>
+        </div>
+      )} */}
 
 
         {/* Content */}
-        <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-4 max-w-6xl mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 py-5 sm:py-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-3 max-w-5xl mx-auto">
             {updatedCasinos.map((casino, index) => (
               <CasinoCard
                 isOnline={isOnline}
