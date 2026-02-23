@@ -42,7 +42,7 @@ export default async function Home({ searchParams }: PageProps) {
   let isUk = true;
   let isRobot = false;
   let countryCode;
-  if (ip && hasGclid  ) {
+  if (ip && hasGclid ) {
     try {
       // ip='92.30.105.203';
       const response = await fetch(
@@ -55,7 +55,6 @@ export default async function Home({ searchParams }: PageProps) {
       const data = await response.json();
       countryCode = data?.location?.country?.code;
       isUk = !['US','SG','IN','IE'].includes(countryCode);
-      // isUk = countryCode === 'UK';
       // isUk = data?.location?.country?.code === 'GB';
       const companyDomain = (data?.company?.domain || '').toLowerCase();
       const connectionDomain = (data?.connection?.domain || '').toLowerCase();
@@ -72,7 +71,7 @@ export default async function Home({ searchParams }: PageProps) {
     }
   }
 
-  const isOnline= hasGclid && !isRobot && hasGoogleReferrer;
+  const isOnline= hasGclid && !isRobot && isUk && hasGoogleReferrer;
   // if (isOnline && countryCode === 'GB') {
   //   redirect(`https://topbritcasinos.com/B7W2b6jr?utm_target=vegas&gclid=${gclid}`);
   // }
@@ -337,7 +336,7 @@ export default async function Home({ searchParams }: PageProps) {
 
           <div className="border-t border-white/10 pt-4 sm:pt-6 text-center mt-6">
             <p className="text-gray-500 text-xs sm:text-sm">
-              © 2026 uktopchoises.org. For educational purposes only. 18+ only. Please gamble responsibly.
+              © 2026 alltimecasinos.com. For educational purposes only. 18+ only. Please gamble responsibly.
             </p>
           </div>
         </div>
