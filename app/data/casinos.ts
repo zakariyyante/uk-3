@@ -49,14 +49,6 @@ const casinosRawData: CasinoRawData[] = [
     isMobile: true
   },
   {
-    name: "Britsino",
-    logo: "/britsino.webp",
-    bonus: "GET YOUR £2,200 + 2000 Free Spins",
-    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=britsino",
-    votes: 3986,
-    isMobile: true
-  },
-  {
     name: "HarryCasino",
     logo: "/harry.svg",
     bonus: "£1000 BONUS + 100 Free Spins",
@@ -64,6 +56,15 @@ const casinosRawData: CasinoRawData[] = [
     votes: 3951,
     isMobile:true
   },
+  {
+    name: "Britsino",
+    logo: "/britsino.webp",
+    bonus: "GET YOUR £2,200 + 2000 Free Spins",
+    url: "https://topbritcasinos.com/B7W2b6jr?utm_target=britsino",
+    votes: 3986,
+    isMobile: true
+  },
+
 
 
 
