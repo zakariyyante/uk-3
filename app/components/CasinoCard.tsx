@@ -8,7 +8,7 @@ import { track } from '@vercel/analytics';
 interface CasinoCardProps {
   casino: Casino;
   rank?: number;
-  badge?: 'gold' | 'silver' | 'bronze' | 'fourth';
+  badge?: 'gold' | 'silver' | 'bronze' ;
   isOnline?: boolean;
 }
 
@@ -48,7 +48,7 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
 
   const paymentMethods = ["Apple Pay", "Google Pay", "PayPal", "Visa Debit", "Mastercard Debit", "Skrill", "Neteller", "Paysafecard", "Bank Transfer"];
 
-  const badgeLabel = badge === 'gold' ? "Big Bonuses & Instant Withdrawal" : badge === 'silver' ? 'Most Popular & Fast Payout' : badge === 'bronze' ? 'Fast Payouts' : 'Trusted/Licensed';
+  const badgeLabel = badge === 'gold' ? "Fast Withdrawal" : badge === 'silver' ? 'Most Popular' : badge === 'bronze' ? 'Trusted/Licensed' : '';
 
   return (
     <article
@@ -113,7 +113,7 @@ export default function CasinoCard({ casino, rank, badge, isOnline = false }: Ca
         }}
         className="block w-full bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-black font-extrabold py-3 px-4 rounded-xl text-base uppercase shadow-lg transition-all duration-300 hover:from-amber-500 hover:via-amber-400 hover:to-amber-500 hover:shadow-amber-500/25 flex items-center justify-center gap-2 tracking-wide"
       >
-        {isOnline ? 'Get Bonus' : 'Play Now'}
+         Play Now
       </a>
       <div className="mt-2 text-center text-[11px] text-amber-200/40">
         T&amp;Cs apply.
