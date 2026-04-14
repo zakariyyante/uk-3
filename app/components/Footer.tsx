@@ -118,7 +118,7 @@ export default function Footer() {
 
         <div className="border-t border-amber-500/10 pt-4 sm:pt-6 text-center mt-6">
           <p className="text-amber-100/30 text-xs sm:text-sm">
-            &copy; 2026 ukbestpickss.com. For educational purposes only. 18+ only. Please gamble responsibly.
+            &copy; 2026 uk10casinos.com. For educational purposes only. 18+ only. Please gamble responsibly.
           </p>
         </div>
       </div>

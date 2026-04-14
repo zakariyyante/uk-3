@@ -60,23 +60,23 @@ const casinosRawData: CasinoRawData[] = [
 
   //
   //
-  // {
-  //   name: "Lizaro",
-  //   logo: "/lizaro.png",
-  //   bonus: "200% up to £1000 + 250 FREE SPINS",
-  //   url: "https://lizaro.muforaset.live?sub_id_1=t4p6a0wbej43uo&utm_source=lizaro",
-  //   votes: 5872,
-  //   isMobile: true
-  // },
-
   {
-    name: "X3Bet",
-    logo: "/x3bet.svg",
-    bonus: "100% UP TO €600 + 200 FREE SPINS",
-    url: "https://x3bet.muforaset.live?sub_id_1=t4p6a0wbej43uo&utm_source=x3bet",
+    name: "Lizaro",
+    logo: "/lizaro.png",
+    bonus: "200% up to £1000 + 250 FREE SPINS",
+    url: "https://lizaro.muforaset.live?sub_id_1=t4p6a0wbej43uo&utm_source=lizaro",
     votes: 5872,
     isMobile: true
   },
+
+  // {
+  //   name: "X3Bet",
+  //   logo: "/x3bet.svg",
+  //   bonus: "100% UP TO €600 + 200 FREE SPINS",
+  //   url: "https://x3bet.muforaset.live?sub_id_1=t4p6a0wbej43uo&utm_source=x3bet",
+  //   votes: 5872,
+  //   isMobile: true
+  // },
 
 
 
