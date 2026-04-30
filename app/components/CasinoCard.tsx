@@ -12,7 +12,8 @@ interface CasinoCardProps {
   isOnline?: boolean;
 }
 
-export default function CasinoCard({ casino, rank, badge, isOnline: _isOnline = false }: CasinoCardProps) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function CasinoCard({ casino, rank, badge, isOnline = false }: CasinoCardProps) {
   const handleCasinoClick = () => {
     if (casino.isMobile) {
       track('Casino Click', { casino: casino.name });
