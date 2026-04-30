@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '../components/Header';
 import Logo from '../components/Logo';
 
@@ -25,8 +26,8 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">1. Introduction</h2>
               <p>
-                Welcome to Casino Top Choices ("we," "our," or "us"). We operate the website uk10topslot.com
-                (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard 
+                Welcome to Casino Top Choices (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We operate the website uk10topslot.com
+                (the &quot;Service&quot;). This Privacy Policy explains how we collect, use, disclose, and safeguard 
                 your information when you visit our website.
               </p>
               <p>
@@ -161,7 +162,7 @@ export default function PrivacyPolicy() {
             </section>
 
             <section>
-              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">9. Children's Privacy</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">9. Children&apos;s Privacy</h2>
               <p>
                 Our Service is not intended for individuals under the age of 18. We do not knowingly collect 
                 personal information from children under 18. If you are a parent or guardian and believe your 
@@ -173,7 +174,7 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">10. Changes to This Privacy Policy</h2>
               <p>
                 We may update our Privacy Policy from time to time. We will notify you of any changes by 
-                posting the new Privacy Policy on this page and updating the "Last updated" date.
+                posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date.
               </p>
               <p className="mt-3">
                 You are advised to review this Privacy Policy periodically for any changes. Changes to this 
@@ -207,7 +208,7 @@ export default function PrivacyPolicy() {
               © 2026 uk10topslot.com. For educational purposes only. 18+ only. Please gamble responsibly.
             </p>
             <div className="mt-4 flex justify-center gap-4 text-xs sm:text-sm">
-              <a href="/" className="text-emerald-400 hover:text-emerald-300">Home</a>
+              <Link href="/" className="text-emerald-400 hover:text-emerald-300">Home</Link>
               <span className="text-gray-600">|</span>
               <a href="/privacy" className="text-emerald-400 hover:text-emerald-300">Privacy Policy</a>
               <span className="text-gray-600">|</span>

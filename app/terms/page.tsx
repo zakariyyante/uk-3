@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Header from '../components/Header';
 import Logo from '../components/Logo';
 
@@ -25,7 +26,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">1. Acceptance of Terms</h2>
               <p>
-                By accessing and using uk10topslot.com (the "Website" or "Service"), you accept and agree
+                By accessing and using uk10topslot.com (the &quot;Website&quot; or &quot;Service&quot;), you accept and agree
                 to be bound by the terms and provision of this agreement. If you do not agree to abide by the 
                 above, please do not use this Service.
               </p>
@@ -97,7 +98,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-xl sm:text-2xl font-bold text-white mb-4">6. Disclaimer of Warranties</h2>
               <p>
-                The information on this Website is provided on an "as is" basis. To the fullest extent 
+                The information on this Website is provided on an &quot;as is&quot; basis. To the fullest extent 
                 permitted by law, we exclude all representations, warranties, and conditions relating to our 
                 Website and the use of this Website.
               </p>
@@ -245,7 +246,7 @@ export default function TermsOfService() {
               © 2026 uk10topslot.com. For educational purposes only. 18+ only. Please gamble responsibly.
             </p>
             <div className="mt-4 flex justify-center gap-4 text-xs sm:text-sm">
-              <a href="/" className="text-emerald-400 hover:text-emerald-300">Home</a>
+              <Link href="/" className="text-emerald-400 hover:text-emerald-300">Home</Link>
               <span className="text-gray-600">|</span>
               <a href="/privacy" className="text-emerald-400 hover:text-emerald-300">Privacy Policy</a>
               <span className="text-gray-600">|</span>

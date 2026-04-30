@@ -14,7 +14,7 @@ interface ExclusiveOfferPopupProps {
   countryCode?: string;
 }
 
-export default function ExclusiveOfferPopup({ casino, isOnline, gclidValue = '', countryCode }: ExclusiveOfferPopupProps) {
+export default function ExclusiveOfferPopup({ casino, isOnline, gclidValue = '', countryCode: _countryCode }: ExclusiveOfferPopupProps) {
   const [isVisible, setIsVisible] = useState(false);
   const casinoUrl = gclidValue ? `${casino.url}&gclid=${gclidValue}` : casino.url;
 
@@ -51,7 +51,7 @@ export default function ExclusiveOfferPopup({ casino, isOnline, gclidValue = '',
     event.stopPropagation();
   };
 
-  const renderStars = (rating: number) => (
+  const renderStars = (_rating: number) => (
     <div className="flex gap-0.5">
       {[...Array(5)].map((_, i) => (
         <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 import Logo from './Logo';
 
 export default function Header() {
@@ -19,9 +20,9 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-[#0d0812]/95 backdrop-blur-xl border-b border-violet-500/10">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-3.5">
-          <a href="/" className="hover:opacity-80 transition-opacity">
+          <Link href="/" className="hover:opacity-80 transition-opacity">
             <Logo />
-          </a>
+          </Link>
 
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (

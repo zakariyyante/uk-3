@@ -12,7 +12,7 @@ interface CasinoCardProps {
   isOnline?: boolean;
 }
 
-export default function CasinoCard({ casino, rank, badge, isOnline = false }: CasinoCardProps) {
+export default function CasinoCard({ casino, rank, badge, isOnline: _isOnline = false }: CasinoCardProps) {
   const handleCasinoClick = () => {
     if (casino.isMobile) {
       track('Casino Click', { casino: casino.name });
