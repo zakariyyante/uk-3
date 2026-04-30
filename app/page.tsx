@@ -69,13 +69,6 @@ export default async function Home({ searchParams }: PageProps) {
 
       {/* Casino Cards Section */}
       <section id="casinos" className="container mx-auto px-4 pb-16">
-        <div className="mb-3 sm:mb-5 lg:mb-8 text-center">
-          <h3 className="text-xl sm:text-2xl lg:text-4xl font-extrabold gold-text mb-2 sm:mb-4 tracking-wide">
-            Our Expert Casino Picks
-          </h3>
-          <p className="text-sm sm:text-base text-violet-100/40">Updated every week — scored on payout speed, bonus quality, and genuine player reviews.</p>
-        </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-7xl mx-auto">
           {regularCasinos.map((casino, index) => (
             <CasinoCard
@@ -87,9 +80,22 @@ export default async function Home({ searchParams }: PageProps) {
           ))}
         </div>
 
-        <div className="mt-8 sm:mt-12 lg:mt-16 bg-violet-500/5 border border-violet-500/15 rounded-2xl p-3 sm:p-4 lg:p-6 max-w-6xl mx-auto">
-          <p className="text-violet-200/50 text-xs sm:text-sm text-center">
-            <strong className="text-violet-200/70">New customers only.</strong> 18+. T&Cs apply. BeGambleAware.org. Please play responsibly.
+        {/* 18+ Disclaimer */}
+        <div className="mt-8 sm:mt-10 max-w-6xl mx-auto rounded-2xl border border-violet-500/20 bg-[#130b1e] px-5 py-4">
+          <p className="text-violet-200/70 text-sm sm:text-base text-center leading-relaxed">
+            <span className="text-orange-400 font-black mr-1">⚠</span>
+            <strong className="text-violet-100 font-extrabold">For adults 18+ only.</strong>{' '}
+            Gambling can be addictive. If you need help, call the{' '}
+            <strong className="text-orange-400 font-extrabold">National Gambling Helpline: 0808 8020 133</strong>{' '}
+            (free, 24h). Play responsibly. T&amp;Cs apply. Visit{' '}
+            <a
+              href="https://www.begambleaware.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-400 hover:text-orange-300 underline underline-offset-2 font-semibold"
+            >
+              begambleaware.org
+            </a>.
           </p>
         </div>
       </section>
